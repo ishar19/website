@@ -313,11 +313,20 @@ h6 { font-size: 16px;}
 
 
 .post-wrapper{
-	display: grid;
-	grid-template-columns: repeat(auto-fit, 320px);
-	gap:20px;
-	justify-content: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.post{
+	margin-bottom: 30px;
+}
+@media (max-width:768px) {
+	.post-wrapper{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 	padding-bottom: 50px;
+}
 }
 
 .post{
